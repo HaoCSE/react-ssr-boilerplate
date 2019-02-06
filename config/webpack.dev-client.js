@@ -56,6 +56,10 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.svg$/,
+				loader: 'svg-inline-loader',
+			},
+			{
 				test: /\.(jpg|svg|png|gif)$/,
 				use: [
 					{
@@ -74,6 +78,7 @@ module.exports = {
 					},
 				],
 			},
+			
 		],
 	},
 	plugins: [
